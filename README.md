@@ -36,3 +36,56 @@ It provides a modern GUI for working with channels, satellites, transponders, an
    ```bash
    git clone https://github.com/your-username/the-channelizer.git
    cd the-channelizer
+
+---------------------------------------------------------------------------------------------------------------------
+
+# The Channelizer
+
+The Channelizer is a lightweight **channel list editor** for satellite/tv box `.chl` files.  
+It’s built in **Python with Tkinter**, requires **no external dependencies**, and can run directly as a `.pyw` script or be compiled into a standalone `.exe`.
+
+---
+
+## ✨ Features
+- Edit `.chl` channel lists (satellite / transponder / channel / favorites)
+- Safe-save with automatic `.bak` backup beside your file
+- Multi-format support (`.chl`, `.sdx`, `.xml.gz`, etc.)
+- Simple GUI with menus, dialogs, and undo/redo
+- 100% Python standard library (no `pip install` required)
+
+---
+
+## 📦 Installation (Windows)
+
+### 1. Install Python
+1. Download the latest **Python 3.x (64-bit)** from [python.org](https://www.python.org/downloads/windows/).
+2. Run the installer:
+   - ✅ Check **“Add Python to PATH.”**
+   - ✅ Ensure **pip** and **tcl/tk (Tkinter)** are selected.
+3. Finish installation.
+
+---
+
+### 2. Get The Channelizer
+- Download the repo:  
+  **Code → Download ZIP** → Extract to a folder (e.g., `C:\Users\<you>\Desktop\The_Channelizer\`).
+
+---
+
+### 2.1 Run as-is (recommended for quick use)
+- Double-click **`The_Channelizer.pyw`**.  
+- If Windows asks, open with `pythonw.exe` (usually found in your Python install folder).
+
+> 💡 Tip: You can set `.pyw` files to always open with Python → `pythonw.exe`.
+
+---
+
+### 3. (Optional) Build a standalone `.exe`
+
+If you want a single-file executable (to share without requiring Python):
+
+#### 3.1 Install builder
+Open **Command Prompt** and run:
+```bat
+pip install auto-py-to-exe
+
