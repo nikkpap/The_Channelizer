@@ -37,22 +37,6 @@ It provides a modern GUI for working with channels, satellites, transponders, an
    git clone https://github.com/your-username/the-channelizer.git
    cd the-channelizer
 
----------------------------------------------------------------------------------------------------------------------
-
-# The Channelizer
-
-The Channelizer is a lightweight **channel list editor** for satellite/tv box `.chl` files.  
-It’s built in **Python with Tkinter**, requires **no external dependencies**, and can run directly as a `.pyw` script or be compiled into a standalone `.exe`.
-
----
-
-## ✨ Features
-- Edit `.chl` channel lists (satellite / transponder / channel / favorites)
-- Safe-save with automatic `.bak` backup beside your file
-- Multi-format support (`.chl`, `.sdx`, `.xml.gz`, etc.)
-- Simple GUI with menus, dialogs, and undo/redo
-- 100% Python standard library (no `pip install` required)
-
 ---
 
 ## 📦 Installation (Windows)
