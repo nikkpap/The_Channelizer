@@ -1,3 +1,7 @@
+Find US on Telegram : https://t.me/+E5ENSByAn6MzM2Y0
+Open for disquations and Ideas. A public brainstorming is better than no brainstorming :) cheers 
+
+
 # The Channelizer
 
 **The Channelizer** is a free, open-source desktop application for managing and editing GTMedia channel list files (`.chl`, `.sdx`, `satellites.xml`).  
