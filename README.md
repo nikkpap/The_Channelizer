@@ -1,4 +1,4 @@
-Find US on Telegram : https://t.me/+E5ENSByAn6MzM2Y0
+Find US on Telegram : https://t.me/The_Channelizer
 Open for disquations and Ideas. A public brainstorming is better than no brainstorming :) cheers 
 
 
