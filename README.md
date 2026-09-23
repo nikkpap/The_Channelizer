@@ -1,73 +1,77 @@
-Find US on Telegram : https://t.me/The_Channelizer
-Open for disquations and Ideas. A public brainstorming is better than no brainstorming :) cheers 
+<p align="center">
+  <img src="The_Channelizer.png" alt="The_Channelizer" width="140">
+</p>
 
+<h1 align="center">The_Channelizer</h1>
 
-📡 The_Channelizer
+<p align="center">
+  <strong>Satellite Database Manager for Windows</strong><br>
+  Manage, inspect, organize, convert, merge and verify satellite receiver channel databases with a modern PyQt6 interface.
+</p>
 
-Satellite Database Manager for Windows
-Manage, inspect, organize, convert, merge and verify satellite receiver channel databases with a modern PyQt6 interface.
-
-<p align="left">
-  <img src="https://img.shields.io/badge/version-v3.0-0A84FF" alt="Version">
+<p align="center">
+  <a href="https://github.com/nikkpap/The_Channelizer"><img src="https://img.shields.io/badge/version-v3.0-0A84FF" alt="Version"></a>
   <img src="https://img.shields.io/badge/Python-3.11-3776AB?logo=python&logoColor=white" alt="Python">
   <img src="https://img.shields.io/badge/UI-PyQt6-41CD52?logo=qt&logoColor=white" alt="PyQt6">
-  <img src="https://img.shields.io/badge/platform-Windows%2010%20%7C%2011-0078D4?logo=windows&logoColor=white" alt="Windows">
+  <img src="https://img.shields.io/badge/platform-Windows%2010%20%7C%2011-0078D4?logo=windows&logoColor=white" alt="Platform">
   <img src="https://img.shields.io/badge/formats-DB%20%7C%20SDX%20%7C%20CHL-8A2BE2" alt="Formats">
 </p>
 
-✨ Features
+<p align="center">
+  <a href="https://t.me/The_Channelizer">Telegram</a> •
+  <a href="https://github.com/nikkpap/The_Channelizer">GitHub</a> •
+  <a href="mailto:nikkpap@gmail.com">Email</a>
+</p>
 
-📂 Open and auto-detect receiver files: .db, .sdx, .chl
+✨ Overview
 
-🗄️ SQLite DB support with receiver-table compatibility and integrity checks
+The_Channelizer is a desktop application for working with satellite receiver channel databases.
 
-📦 SDX Mode 1 support — CDX header + zlib-compressed binary payload
+It gives you one clean interface to:
 
-🧾 SDX Mode 2 support — JSON-stream receiver database format
+open and inspect receiver files
 
-📡 CHL Ver 1 support — native concatenated JSON receiver export
+manage favorites and favorite groups
 
-📺 Unified TV / Radio channel browser
+browse channel / transponder / satellite information
 
-🔍 Fast search and filtering by channel, satellite, DB ID and order
+convert between supported formats
 
-↕️ Sortable channel table
+merge different receiver files
 
-⭐ Favorites management with multi-channel selection
+verify structure before saving
 
-🗂️ Favorite-group rename and ordering
+work more safely with automatic backups and a BOX-SAFE workflow
 
-🛰️ Satellite management
+Goal: make receiver-file editing easier, cleaner and safer.
 
-ℹ️ Detailed Channel / Transponder / Satellite / Favorites information
+🚀 Highlights
 
-📊 Summary view with receiver database counts
+📂 Auto-detects receiver files from content, not just extension
+
+📺 Unified channel browser for TV and Radio
+
+⭐ Favorites management with multi-selection support
+
+🛰️ Satellite management for supported formats
+
+ℹ️ Detailed Channel Info dialog
 
 🔄 DB ↔ SDX ↔ CHL conversion
 
-🧩 Mixed-format merge: DB + SDX + CHL
+🧩 Mixed-format merge
 
-✅ Built-in receiver file verifier
+✅ Built-in verifier
 
-💾 BOX-SAFE automatic backups before native edits
-
-🛡️ Verified Save As workflow using temporary output before replacement
-
-🖱️ Drag & drop support
+🛡️ BOX-SAFE save workflow
 
 🌐 7 interface languages
 
 🌙 System / Dark / Light themes
 
-📐 Responsive UI for smaller displays
+📐 Responsive UI with collapsible sidebar
 
-🍔 Collapsible sidebar / hamburger menu
-
-🪟 Windows GUI build with no CMD window
-
-🚀 Splash screen and modern PyQt6 interface
-
-📁 Supported formats
+📁 Supported Formats
 
 Format
 
@@ -101,81 +105,73 @@ CHL JSON Stream Ver 1
 
 The format is detected from the file contents, not only from the extension.
 
+🧰 Main Features
+
+📺 Channel Browser
+
+unified TV / Radio channel view
+
+sortable table
+
+search by channel, satellite, DB ID and order
+
+visible favorite membership columns
+
+responsive layout for smaller displays
+
 ⭐ Favorites
 
-The_Channelizer includes native favorite handling for supported formats.
+add/remove selected channels to favorite groups
 
-You can:
-
-add or remove selected channels from favorite groups
-
-work with multiple selected channels
+multi-channel favorite editing
 
 clear all favorites from selected channels
 
 rename favorite groups
 
-reorder favorite groups in the application
+reorder favorite groups
 
-view favorite membership directly in the channel table
+open a dedicated favorites summary page
 
-open a Favorites summary page
+Shortcuts
 
-Keyboard shortcuts:
+1 ... 9 → toggle favorite slot 1 ... 9
 
-1 ... 9   Toggle Favorite slot 1 ... 9
-Ctrl + F  Focus search
-F1        Instructions
+Ctrl + F → focus search
+
+F1 → open instructions
 
 🛰️ Satellites
 
-The Satellites tool lets you inspect the satellites inside the current receiver file.
+inspect satellites in the current receiver file
 
-SQLite DB
+keep/delete satellites where safely supported
 
-Satellite deletion is supported together with related cleanup of:
+dependent cleanup for related records
 
-transponders
+protected workflow with backup and verification
 
-channels
+Format notes
 
-audio data
+SQLite DB: supported
 
-subtitles
+CHL: supported with re-indexing
 
-favorite links
-
-receiver mapping records
-
-CHL
-
-Satellite deletion is supported with automatic re-indexing of:
-
-satellites
-
-transponders
-
-channels
-
-favorite channel references
-
-SDX
-
-Satellite deletion is intentionally locked in v3.0 until additional receiver-side validation is completed for binary SDX re-indexing.
+SDX: deletion intentionally locked in v3.0 pending more validation
 
 ℹ️ Channel Info
 
-Double-click any channel or use the right-click menu.
+Double-click a channel or use the right-click menu to view:
 
-Depending on the receiver format, The_Channelizer can display:
+channel details
 
-Channel
+transponder details
 
-Name
+satellite details
 
-Provider
+favorites membership
 
-TV / Radio type
+Depending on the loaded format, available data can include:
 
 Service ID
 
@@ -185,43 +181,33 @@ PCR PID
 
 PMT PID
 
-Video codec/type
+provider
 
-Lock / Skip / Hide state
+type
 
-Receiver-specific fields
+codec
 
-Transponder
+lock / skip / hide state
 
-Frequency
+receiver-specific values
 
-Symbol rate
+📊 Summary
 
-Polarization
+Quick receiver database counts, including:
 
-FEC
+satellites
 
-Modulation
+transponders
 
-Stream ID
+channels
 
-TS ID / ON ID
+audio tracks
 
-PLS / multistream fields where available
+subtitles
 
-Satellite
+favorite groups
 
-Satellite name
-
-Orbital angle
-
-Band
-
-receiver-specific satellite parameters
-
-Favorites
-
-Every favorite group that contains the selected channel
+favorite links
 
 🔄 Converter
 
@@ -236,18 +222,19 @@ SDX → CHL
 CHL → DB
 CHL → SDX
 
-The source format is detected automatically.
+source format is auto-detected
 
-The generated target file is verified before it is reported as ready.
+generated output is verified
 
-Different receiver formats do not contain exactly the same fields.
-Conversion is structural and cannot guarantee byte-for-byte equivalence with the original receiver format.
+target file is reported only after a successful write/check cycle
+
+Different receiver formats do not contain exactly the same fields, so conversion is structural, not byte-for-byte identical.
 
 🧩 Merge
 
-The_Channelizer can merge multiple receiver files using a common internal data model.
+The_Channelizer can merge multiple receiver files using a common internal model.
 
-Supported combinations include:
+Supported combinations
 
 DB  + DB
 DB  + SDX
@@ -256,89 +243,85 @@ SDX + SDX
 SDX + CHL
 CHL + CHL
 
-Output can be:
+Output
 
 .db
 .sdx
 .chl
 
-The merged file is automatically verified.
+The merged file is verified automatically after creation.
 
 ✅ Verifier
 
-The verifier performs format-specific checks before files are considered ready.
+The verifier performs format-specific checks before a file is considered ready.
 
 SQLite DB
 
 SQLite integrity check
 
-required receiver tables
+required tables
 
-required receiver columns
+required columns
 
-receiver schema compatibility
+schema compatibility
 
 SDX
 
-SDX mode detection
+mode detection
 
 header / object structure
 
-count consistency
-
-satellite ↔ transponder links
-
-program ↔ transponder links
+relationship consistency
 
 favorite references
 
 CHL
 
-CHL Ver 1 header
+Ver 1 structure
 
-satellite / TP / channel / favorite counts
+counts
 
-continuous object indexes
+continuous indexes
 
-TP → Satellite references
+TP → satellite references
 
-Channel → TP references
+channel → TP references
 
-Favorite → Channel references
+favorite → channel references
 
-🛡️ BOX-SAFE mode
+🛡️ BOX-SAFE Workflow
 
-Receiver files can be sensitive, so The_Channelizer uses a conservative write workflow.
+Receiver files can be sensitive, so The_Channelizer uses a conservative write model.
 
-Automatic backup
+What it does
 
-Before the first native modification of a loaded receiver file:
+verifies compatibility before changes
 
-original_file.ext.Channelizer_YYYYMMDD_HHMMSS.bak
+creates automatic backups before native edits
 
-is created automatically.
+uses a temporary file during Save As
 
-Safe Save As
+verifies output before replacing destination files
 
-The application writes to a temporary file first:
+protects existing destination files with backup behavior
 
-Receiver Data
-     ↓
-Temporary Output
-     ↓
-Verifier
-     ↓
-Backup Existing Destination
-     ↓
-Replace Destination
+Save flow
 
-If verification fails, the destination is not replaced.
+Receiver data
+    ↓
+Temporary output
+    ↓
+Verification
+    ↓
+Backup existing destination
+    ↓
+Replace destination
 
-Always keep an untouched original receiver export.
+Important: always keep an untouched original receiver export.
 
 💾 Save As
 
-The main interface uses Save As… instead of silently overwriting the current export.
+The app uses Save As… instead of silently overwriting the working file.
 
 Native extensions are preserved:
 
@@ -346,32 +329,41 @@ SQLite DB → .db
 SDX       → .sdx
 CHL       → .chl
 
-After a successful save, the new verified file becomes the active working file.
+After a successful save:
 
-🔎 Search & filters
+the output has been verified
 
-Search supports channel data such as:
+the new file becomes the active file
 
-channel name
+the original file remains protected unless you intentionally overwrite it
 
-satellite
+🎨 Interface
 
-DB / program ID
+The application includes:
 
-channel order
+System Auto
 
-The filter buttons support:
+Dark
 
-All
-TV
-Radio
-Off
+Light
 
-The visible channel count updates immediately.
+It also includes:
+
+responsive main layout
+
+collapsible hamburger sidebar
+
+compact sidebar mode
+
+automatic sidebar collapse on smaller displays
+
+horizontal scrolling for wide favorite layouts
+
+Minimum usable size: approximately 820 × 560
 
 🌐 Languages
 
-The_Channelizer currently includes:
+The UI currently supports:
 
 🇬🇧 English
 
@@ -387,40 +379,16 @@ The_Channelizer currently includes:
 
 🇨🇳 中文
 
-The selected language is stored and restored automatically.
-
-🎨 Interface
-
-The application includes:
-
-System Auto theme
-
-Dark theme
-
-Light theme
-
-responsive layout
-
-compact sidebar
-
-expanded sidebar
-
-automatic sidebar collapse on smaller displays
-
-auto-fitting application title
-
-horizontal table scrolling for large favorite layouts
-
-Minimum usable window size is approximately:
-
-820 × 560
+Language settings are stored and restored automatically.
 
 🖥️ Requirements
 
 Run from source
 
-Windows 10 / Windows 11
+Windows 10 / 11
+
 Python 3.11
+
 PyQt6
 
 Install PyQt6:
@@ -431,9 +399,9 @@ Run:
 
 py -3.11 The_Channelizer_v3.0.pyw
 
-📦 Build Windows EXE
+📦 Build EXE
 
-Install the build tools:
+Install tools:
 
 py -3.11 -m pip install PyQt6 pyinstaller auto-py-to-exe
 
@@ -441,23 +409,57 @@ Launch:
 
 auto-py-to-exe
 
-Recommended settings:
+Recommended setup
 
-Script          The_Channelizer_v3.0.pyw
-Name            The_Channelizer
-One File        ON
-Window Based    ON
-Console         NONE
-Icon            The_Channelizer.ico
-Version File    The_Channelizer_version_info.txt
-Manifest        The_Channelizer.manifest
-Clean           ON
-Optimize        1
-UPX             OFF
-UAC Admin       OFF
-UAC UIAccess    OFF
+Option
 
-Direct PyInstaller example:
+Value
+
+Script
+
+The_Channelizer_v3.0.pyw
+
+Name
+
+The_Channelizer
+
+Packaging
+
+One File
+
+Console
+
+Window Based
+
+Icon
+
+The_Channelizer.ico
+
+Version File
+
+The_Channelizer_version_info.txt
+
+Manifest
+
+The_Channelizer.manifest
+
+Clean
+
+ON
+
+Optimize
+
+1
+
+UPX
+
+OFF
+
+UAC Admin
+
+OFF
+
+Direct PyInstaller example
 
 py -3.11 -m PyInstaller ^
   --noconfirm ^
@@ -476,85 +478,50 @@ Output:
 
 dist\The_Channelizer.exe
 
-⚠️ Receiver compatibility
+⚠️ Compatibility Note
 
 Receiver database formats are often firmware-specific.
 
-A file passing The_Channelizer verification means that it is structurally consistent with the implemented format profile. It does not guarantee that every receiver model or firmware revision will accept the generated file.
+A file passing verification means it is structurally consistent with the currently implemented profile. It does not guarantee that every receiver or firmware version will accept it.
 
-For new receiver formats or compatibility reports, please include:
+If you find a compatibility issue, please report:
 
-Receiver brand/model
-Firmware version
-Export format
-The_Channelizer version
-Operation performed
-Error / receiver behavior
+receiver model
 
-Real receiver exports are extremely useful for improving compatibility.
+firmware version
 
-🤝 Discussions, testing & ideas
+source file type
 
-The project is open to:
+operation performed
 
-receiver format research
+expected result
 
-compatibility reports
+actual result / error
 
-sample exports
-
-populated-favorite CHL samples
-
-SDX Mode 1 test files
-
-UI improvements
-
-translations
-
-bug reports
-
-feature ideas
-
-A public brainstorming is better than no brainstorming :) Cheers!
-
-👨‍💻 Development
-
-The_Channelizer is built with:
-
-Python
-
-PyQt6
-
-SQLite
-
-JSON
-
-zlib
-
-binary receiver structure parsing
-
-receiver-specific format adapters
-
-a common internal conversion / merge model
-
-The application remains intentionally conservative with receiver data: unsupported or insufficiently validated destructive operations are kept disabled rather than guessed.
-
-📬 Community
+🤝 Community
 
 ALU DEV TEAM @ 2026
 Nikolaos K. Paridis シ (nikkpap)
 
 📧 nikkpap@gmail.com
+
 💬 Telegram — The_Channelizer
+
 💻 GitHub — nikkpap/The_Channelizer
 
-📌 Current version
+Open for discussions and ideas.
+
+A public brainstorming is better than no brainstorming :) Cheers!
+
+👨‍🔧 About the developer
+
+Civil Engineer, with passion in Technology... home-projects, mods, and everything that needs further development...
+
+📌 Current Version
 
 The_Channelizer v3.0
 
-Version numbering continues from v3.0 onward.
-
-❤️ Final note
+❤️ Final Note
 
 Keep your original receiver export, test generated files carefully, and share what you learn.
 
